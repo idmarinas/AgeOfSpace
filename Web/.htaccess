@@ -1,0 +1,8 @@
+Options +FollowSymlinks
+RewriteEngine on
+
+RewriteRule ^(.*)/public/(.*)$ Ressources/public/$2 [L]
+RewriteRule ^public/(.*)$ Ressources/public/$1 [L]
+RewriteCond ^%{REQUEST_URL} !/public
+
+RewriteRule ^(.*)$ index.php [L]
