@@ -1,8 +1,15 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+namespace Web\Ressources;
 
+class config {
+
+    const DB_HOST = "127.0.0.1";
+    const DB_USERNAME = "root";
+    const DB_PASSWORD = "";
+    const DB_NAME = "ageofspace";
+    
+    const NB_PLANET = 10;
+    const NB_VILLE = 20;
+
+}

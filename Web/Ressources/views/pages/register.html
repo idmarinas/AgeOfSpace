@@ -1,0 +1,50 @@
+{login=
+-}
+<h4>Inscription</h4>
+
+<div >
+    <form action="" method="POST">
+        <div class="w3-row-padding w3-padding-16">
+            <div class="w3-col m5 l4 ">
+                <input class="w3-input" required autofocus type="text" name="pseudo" value="{register.post.pseudo}" placeholder="Pseudo"/>
+            </div>
+            <div class="w3-col m7 l8">
+                {register.error.pseudo}
+            </div>
+        </div>
+        <div class="w3-row-padding w3-padding-16">
+            <div class="w3-col m5 l4 ">
+                <input class="w3-input" required type="password" name="password" value="" placeholder="password"/>
+            </div>
+            <div class="w3-col m7 l8">
+                {register.error.password}
+            </div>
+        </div>
+        <div class="w3-row-padding w3-padding-16">
+            <div class="w3-col m5 l4">
+                <input class="w3-input" required type="password" name="confirm" value="" placeholder="confirm"/>
+            </div>
+            <div class="w3-col m7 l8">
+                {register.error.confirm}
+            </div>
+        </div>
+        <div class="w3-row-padding w3-padding-16">
+            <div class="w3-col m5 l4">
+                <input class="w3-input" required type="email" name="email" value="{register.post.email}" placeholder="email"/>
+            </div>
+            <div class="w3-col m7 l8">
+                {register.error.email}
+            </div>
+        </div>
+
+        <input class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" type="submit" value="Inscription" name ="register"/>
+
+
+    </form>
+</div>
+{/login}
+
+
+{login=
+-}
+{/login}

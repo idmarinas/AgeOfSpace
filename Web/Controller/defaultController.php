@@ -11,7 +11,8 @@ class defaultController {
     public function indexAction() {
         $this->controllerAction();
         $parser = new parserLibrary;
-        $file = file_get_contents("./Ressources/views/default.html");
+       
+        $file =  $parser->logged(file_get_contents("./Ressources/views/default.html"));
         return $parser->parse($file, $this->data);
     }
 
